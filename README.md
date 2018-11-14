@@ -1,11 +1,13 @@
 # Bacod
 Bacod adalah aplikasi web public chat room yg di bangun menggunakan framework CodeIgniter
 ## Todo
-- menggunakan session pada main code ( chat.php)
+- membuat layout yg lebih menarik (chat.php, welcome_message.php)
+- menambahkan textarea dan method post ke database (chat.php)
+- menambahkan icon user avatar (chat.php)
 - menambah fitur register (register.php)
 - menambah fitur login (login.php)
-- menggabungkan chat message history ke database (chat.php)
 - menambah fitur API (api.php)
+- menambahkan dokumentasi API (api.php)
 ## Lisensi
 The MIT License (MIT)
 
