@@ -9,6 +9,7 @@ class Pages extends CI_Controller {
 			show_404();
 		}
 
+		$this->load->model('Bacod');
 		$this->load->view('templates/header');
 		$this->load->view('pages/'.$pages);
 		$this->load->view('templates/footer');
