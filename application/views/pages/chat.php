@@ -1,30 +1,12 @@
 <?php
-$form=array(
-	'message'=>array(
-		'name'=>'message',
-		'class'=>'form-control',
-		'placeholder'=>'message'
-	),
-
-	'button'=>array(
-		'name'=>'action',
-		'class'=>'btn btn-default btn-lg',
-		'value'=>'Bacod!'
-	)
-);
-
-$form['data']['message']=form_textarea($form['message']);
-$form['data']['button']=form_submit($form['button']);
-
 $_POST['name']='Anonymous';
-if(isset($_POST['action']) == 'submit') {
+if(isset($_POST['action'])) {
 	$data = array(
 		'name' => $_POST['name'],
 		'message' => gzdeflate($_POST['message'])
 	);
-$this->db->insert('table_message', $data);
-}
-?>
+$this->db->insert('table_message', $data);}?>
+
 <title>Chat Rooms</title>
 <body class="modal-body">
 	<div class="modal-header">
@@ -48,7 +30,7 @@ $this->db->insert('table_message', $data);
 		</div>
 	</div>
 	<?=form_open('',array('method'=>'post','class'=>'modal-footer'));?>
-	<?=$form['data']['message'];?>
-	<?=$form['data']['button'];?>
+	<?=$form['message'];?>
+	<?=$form['button'];?>
 	<?=form_close();?>
 </body>
