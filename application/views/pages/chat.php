@@ -7,7 +7,6 @@ if(isset($_POST['action'])) {
 	);
 $this->db->insert('table_message', $data);}?>
 
-<title>Chat Rooms</title>
 <body class="modal-body">
 	<div class="modal-header">
 		<div class="table-responsive">

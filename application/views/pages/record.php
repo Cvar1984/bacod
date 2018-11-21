@@ -1,4 +1,3 @@
-<title>User Record</title>
 <body class="modal-body">
 	<div class="modal-content">
 		<div class="table-responsive">
