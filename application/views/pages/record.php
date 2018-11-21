@@ -1,6 +1,6 @@
 <title>User Record</title>
-<body>
-	<div class="well-lg">
+<body class="modal-body">
+	<div class="modal-content">
 		<div class="table-responsive">
 			<table class="table table-hover">
 				<thead>
@@ -10,7 +10,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<?php foreach($this->Bacod->get_user() as $row):?>
+					<?php foreach($this->bacod_model->get_user() as $row):?>
 					<tr>
 						<td><?php echo $row->name;?></td>
 						<td><?php echo $row->bio;?></td>

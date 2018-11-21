@@ -27,9 +27,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<div class="collapse navbar-collapse navbar-ex1-collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="<?=base_url('index.php');?>">Home</a></li>
-				<li><a href="<?=base_url('index.php/chat');?>">Chat</a></li>
-				<li><a href="<?=base_url('index.php/record');?>">Record</a></li>
+				<li><a href="<?=site_url('');?>">Home</a></li>
+				<li><a href="<?=site_url('chat');?>">Chat</a></li>
+				<li><a href="<?=site_url('record');?>">Record</a></li>
 			</ul>
 			<form class="navbar-form navbar-left" role="search">
 				<div class="form-group">
@@ -38,8 +38,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<button type="submit" class="btn btn-default">Submit</button>
 			</form>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="<?=base_url('index.php/register');?>">Register</a></li>
-				<li><a href="<?=base_url('index.php/login');?>">Login</a></li>
+				<li><a href="<?=site_url('register');?>">Register</a></li>
+				<li><a href="<?=site_url('login');?>">Login</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 					<ul class="dropdown-menu">
