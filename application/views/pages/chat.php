@@ -5,7 +5,7 @@ if(isset($_POST['action'])) {
 		'name' => $_POST['name'],
 		'message' => gzdeflate($_POST['message'])
 	);
-$this->db->insert('table_message', $data);}?>
+$this->db->insert('table_message', $data);unset($data);}?>
 
 <body class="modal-body">
 	<div class="modal-header">
@@ -20,8 +20,8 @@ $this->db->insert('table_message', $data);}?>
 				<tbody>
 					<?php foreach ($this->bacod_model->get_message() as $row):?>
 					<tr>
-						<td><?=$row->name;?></td>
-						<td><?=gzinflate($row->message);?></td>
+						<td><?=htmlentities($row->name);?></td>
+						<td><?=htmlentities(gzinflate($row->message));?></td>
 					</tr>
 					<?php endforeach;?>
 				</tbody>
